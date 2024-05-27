@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+body{
+    font-family: monospace;
+}
+.header{
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Foodie.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    padding: 4px 4px
+    flex 1;
+    text-align: left;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+nav a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;    
+}
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+}
+.images{
+    width: 100%;
+}
+.text{
+    padding: 12px 24px !important;
+    opacity: 0.60;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: inherit;
+    display: block;
+    unicode-bidi: isolate;
+    letter-spacing: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+.pagecontent{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: inherit;
+    display: block;
+}
+.about{
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    box-sizing: inherit;
+    display: table;
+    clear: both;
+}
+.img2{
+    width: 49.99%;
+    padding: 8px 16px !important;
+    float: left;
+    box-sizing: inherit;
+    opacity: 0.75;
+    border-radius: 4px;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+    width: 400px;
+    aspect-ratio: auto 600/750;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    
+}
+.aboutcontent{
+    padding: 12px 16px  !important;
+    box-sizing: inherit;
+    display: block;
+    font-family:monospace;
+}
+.aboutcontent h1{
+    text-align: center;
+    font-family: monospace;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+.aboutcontent hr{
+    width: 30%;
+    margin: auto;
+}
+.aboutcontent h5{
+    padding: 12px 16px !important;
+    box-sizing: inherit;
+    display: block;
+    font-family: monospace;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 24px;
+}
+p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 6px;
+    font-size: 18px;
+}
+span{
+    color: whitesmoke;
+    background-color:grey;   
+}
+.menuhr{
+    margin: 20px 0;
+}
+.menusection{
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    box-sizing: inherit;
+    display: block;
+    font-family: monospace;
+}
+.ourmenu{
+    padding: 12px 24px !important;
+    float: left;
+    width: 100%;
+}
+.ourmenu h1{
+    text-align: center !important;
+    font-family: cursive;
+    font-size: 50px;
+    color: crimson;
+}
+.rmenu{
+    width: 20%;
+    margin: auto;
+}
+.ourmenu h4{
+    font-family: cursive;
+    letter-spacing: 5px;
+    font-size: 36px;
+    text-align: left;
+    color: yellowgreen;
+}
+.ourmenu p{
+    font-family: sans-serif;
+    text-align: left;
+    letter-spacing: 4px;
+    padding: 5px 5px;
+    opacity: 0.75;
+}
+.menuimg{
+    width: auto;
+    height: auto;
+    margin:auto;
+    /* position: relative; */
+
+}
+.contactsection{
+    width: 1100px;
+    height: auto;
+    padding-top: 20px;
+    box-sizing: inherit;
+    display: block;
+}
+.contactsection h1{
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 5px 5px;
+    color: brown;
+}
+.contactsection hr{
+    width: 15%;
+    margin: auto;
+}
+.paracontact{
+    font-family: sans-serif;
+    letter-spacing: normal;
+    text-align: left;
+}
+.contacthead{
+    font-family: monospace;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 10px;
+    color: slategray;
+}
+.contactus{
+    font-family: cursive;
+    text-align: left;
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: normal;
+}
+form{
+    box-sizing: border-box;
+}
+form input{
+    text-decoration-line: none;
+    border: none;
+    cursor: text;
+   cursor: pointer;
+
+}
+.name,.Number,.date,.message{
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    padding: 8px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+    overflow: visible;
+    font: inherit;
+    margin: 0;
+    box-sizing: inherit;
+}
+button{
+        margin: auto;
+        padding-top: 40px;
+
+}
+.submit{
+    text-align: center;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    padding: 5px 5px;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+    box-sizing: inherit;
+    color: black;
+    font-size: 15px;
+    background-color: slategray;
+}
+.footer{
+    color:black;
+    background-color: #f1f1f1;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    text-align: center;
+    display: block;
+    box-sizing: inherit;
+}
+.footer a{
+    color: inherit;
+    background-color: transparent;
+    box-sizing: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: cursive;
+    border-bottom: 1px solid #f44336
+}
